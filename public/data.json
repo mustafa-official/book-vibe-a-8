@@ -8,20 +8,20 @@
       "totalPages": 336,
       "rating": 4.5,
       "category": "Fiction",
-      "tags": ["Classics", "Legal Drama", "Coming-of-Age"],
+      "tags": ["Classics", "Legal Drama"],
       "publisher": "HarperCollins",
       "yearOfPublishing": 1960
     },
     {
       "id": 2,
-      "bookName": "1984",
+      "bookName": "Remember 1984",
       "author": "George Orwell",
       "image": "https://i.ibb.co/mbPXK5M/books2.png",
       "review": "1984 is a chilling portrayal of a dystopian society where totalitarianism reigns supreme and individual freedom is crushed under the weight of oppression.",
       "totalPages": 328,
       "rating": 4.6,
       "category": "Fiction",
-      "tags": ["Dystopian", "Political Fiction", "Classic"],
+      "tags": ["Political Fiction", "Classic"],
       "publisher": "Secker & Warburg",
       "yearOfPublishing": 1949
     },
@@ -34,7 +34,7 @@
       "totalPages": 180,
       "rating": 4.3,
       "category": "Fiction",
-      "tags": ["Classic", "Romance", "Tragedy"],
+      "tags": ["Dystopian", "Tragedy"],
       "publisher": "Scribner",
       "yearOfPublishing": 1925
     },
@@ -47,7 +47,7 @@
       "totalPages": 224,
       "rating": 4.2,
       "category": "Fiction",
-      "tags": ["Coming-of-Age", "Literary Fiction"],
+      "tags": ["Literary", "Romance"],
       "publisher": "Little, Brown and Company",
       "yearOfPublishing": 1951
     },
@@ -60,7 +60,7 @@
       "totalPages": 279,
       "rating": 4.7,
       "category": "Fiction",
-      "tags": ["Classic", "Romance", "Regency"],
+      "tags": ["Romance", "Regency"],
       "publisher": "T. Egerton, Whitehall",
       "yearOfPublishing": 1813
     },
@@ -73,7 +73,7 @@
       "totalPages": 309,
       "rating": 4.8,
       "category": "Fantasy",
-      "tags": ["Young Adult", "Magic", "Adventure"],
+      "tags": ["Magic", "Adventure"],
       "publisher": "Bloomsbury",
       "yearOfPublishing": 1997
     }

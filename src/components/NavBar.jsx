@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <Navbar className="mx-auto shadow-none py-2">
+    <Navbar className="mx-auto shadow-none mt-4">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography className=" cursor-pointer py-1.5 lg:ml-2">
           <Link to="/" className="text-2xl font-bold">
