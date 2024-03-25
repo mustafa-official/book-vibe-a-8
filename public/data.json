@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/rM3rhCM/books1.png",
+      "review": "To Kill a Mockingbird is a timeless classic that tackles the issues of racial injustice and moral growth with compassion and integrity.",
+      "totalPages": 336,
+      "rating": 4.5,
+      "category": "Fiction",
+      "tags": ["Classics", "Legal Drama", "Coming-of-Age"],
+      "publisher": "HarperCollins",
+      "yearOfPublishing": 1960
+    },
+    {
+      "id": 2,
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "https://i.ibb.co/mbPXK5M/books2.png",
+      "review": "1984 is a chilling portrayal of a dystopian society where totalitarianism reigns supreme and individual freedom is crushed under the weight of oppression.",
+      "totalPages": 328,
+      "rating": 4.6,
+      "category": "Fiction",
+      "tags": ["Dystopian", "Political Fiction", "Classic"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+    {
+      "id": 3,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://i.ibb.co/C7MppmF/books3.png",
+      "review": "The Great Gatsby is a mesmerizing tale of love, ambition, and the pursuit of the American Dream set against the backdrop of the Roaring Twenties.",
+      "totalPages": 180,
+      "rating": 4.3,
+      "category": "Fiction",
+      "tags": ["Classic", "Romance", "Tragedy"],
+      "publisher": "Scribner",
+      "yearOfPublishing": 1925
+    },
+    {
+      "id": 4,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/S7Gy90G/books4.png",
+      "review": "The Catcher in the Rye is a compelling exploration of teenage angst and rebellion, capturing the essence of youth with honesty and authenticity.",
+      "totalPages": 224,
+      "rating": 4.2,
+      "category": "Fiction",
+      "tags": ["Coming-of-Age", "Literary Fiction"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "id": 5,
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://i.ibb.co/Mndb80d/books5.png",
+      "review": "Pride and Prejudice is a delightful romantic comedy that explores themes of love, class, and societal expectations in Regency-era England.",
+      "totalPages": 279,
+      "rating": 4.7,
+      "category": "Fiction",
+      "tags": ["Classic", "Romance", "Regency"],
+      "publisher": "T. Egerton, Whitehall",
+      "yearOfPublishing": 1813
+    },
+    {
+      "id": 6,
+      "bookName": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "image": "https://i.ibb.co/Y8bqPh9/books6.png",
+      "review": "Harry Potter and the Philosopher's Stone is a captivating tale of magic, friendship, and adventure that transports readers to a world of wonder and enchantment.",
+      "totalPages": 309,
+      "rating": 4.8,
+      "category": "Fantasy",
+      "tags": ["Young Adult", "Magic", "Adventure"],
+      "publisher": "Bloomsbury",
+      "yearOfPublishing": 1997
+    }
+  ]
+  
