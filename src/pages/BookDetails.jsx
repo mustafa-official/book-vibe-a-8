@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import useBooksLoad from "../Hooks/useBooksLoad";
 import { useEffect, useState } from "react";
 import { Button } from "@material-tailwind/react";
+import { saveToLocalStorage } from "../utils/localStorage";
 
 const BookDetails = () => {
   const { books } = useBooksLoad();
@@ -26,6 +27,10 @@ const BookDetails = () => {
   } = data || {};
 
   const allTags = tags || [];
+
+  const handleReadBtn = () => {
+    saveToLocalStorage(data);
+  };
 
   return (
     <section className="dark:bg-gray-100 dark:text-gray-800 container mx-auto px-5 lg:px-10">
@@ -82,6 +87,7 @@ const BookDetails = () => {
           </div>
           <div className="flex lg:justify-start justify-center gap-4 mt-4">
             <Button
+              onClick={() => handleReadBtn()}
               style={{
                 backgroundColor: "transparent",
                 color: "black",

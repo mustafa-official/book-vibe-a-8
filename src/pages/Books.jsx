@@ -1,9 +1,23 @@
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
+import HeadingBooks from "../components/HeadingBooks";
+
 const Books = () => {
-    return (
-        <div>
-            <h2>book page</h2>
-        </div>
-    );
+  return (
+    <div className="container mx-auto px-10 mt-3">
+      <HeadingBooks></HeadingBooks>
+      <div className="mt-8">
+        <Tabs>
+          <TabList>
+            <Tab>Read Books</Tab>
+            <Tab>Wishlist Books</Tab>
+          </TabList>
+          <TabPanel>Hello</TabPanel>
+          <TabPanel></TabPanel>
+        </Tabs>
+      </div>
+    </div>
+  );
 };
 
 export default Books;
