@@ -1,6 +1,7 @@
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import HeadingBooks from "../components/HeadingBooks";
+import ReadBooks from "../components/ReadBooks";
 
 const Books = () => {
   return (
@@ -12,7 +13,9 @@ const Books = () => {
             <Tab>Read Books</Tab>
             <Tab>Wishlist Books</Tab>
           </TabList>
-          <TabPanel>Hello</TabPanel>
+          <TabPanel> 
+            <ReadBooks></ReadBooks>
+          </TabPanel>
           <TabPanel></TabPanel>
         </Tabs>
       </div>
