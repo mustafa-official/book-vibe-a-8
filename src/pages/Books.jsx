@@ -2,6 +2,7 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import HeadingBooks from "../components/HeadingBooks";
 import ReadBooks from "../components/ReadBooks";
+import WishList from "../components/WishList";
 
 const Books = () => {
   return (
@@ -14,11 +15,11 @@ const Books = () => {
             <Tab>Wishlist Books</Tab>
           </TabList>
           <TabPanel>
-            <div className="grid grid-cols-1 gap-5">
-              <ReadBooks></ReadBooks>
-            </div>
+            <ReadBooks></ReadBooks>
           </TabPanel>
-          <TabPanel></TabPanel>
+          <TabPanel>
+            <WishList></WishList>
+          </TabPanel>
         </Tabs>
       </div>
     </div>

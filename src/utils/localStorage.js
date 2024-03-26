@@ -7,9 +7,14 @@ export const saveToLocalStorage = (data) => {
     if (!existData) {
         savedData.push(data);
         localStorage.setItem('book', JSON.stringify(savedData));
-        toast.success('Successfully Added!')
+        toast.success('Book Added to Read List')
     } else {
-        toast.warning('Already Added')
+        toast.warning('You have Already Read this Book')
     }
 
+}
+
+export const getFromLocalStorage = () => {
+    const data = JSON.parse(localStorage.getItem('book')) || [];
+    return data
 }

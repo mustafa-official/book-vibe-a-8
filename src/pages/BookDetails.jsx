@@ -2,17 +2,24 @@ import { useParams } from "react-router-dom";
 import useBooksLoad from "../Hooks/useBooksLoad";
 import { useEffect, useState } from "react";
 import { Button } from "@material-tailwind/react";
-import { saveToLocalStorage } from "../utils/localStorage";
+import { getFromLocalStorage, saveToLocalStorage } from "../utils/localStorage";
+import { toast } from "react-toastify";
 
 const BookDetails = () => {
   const { books } = useBooksLoad();
   const { id } = useParams();
   const [data, seData] = useState({});
+  const [wishList, setWishList] = useState([]);
   useEffect(() => {
     const findBook = books.find((book) => book.id === +id);
     seData(findBook);
+
+    setWishList(getFromLocalStorage);
   }, [books, id]);
 
+  const loadFromLocal = () => {
+    setWishList(getFromLocalStorage);
+  };
   const {
     bookName,
     rating,
@@ -32,6 +39,16 @@ const BookDetails = () => {
     saveToLocalStorage(data);
   };
 
+  // console.log(wishList);
+  const handleWishlistBtn = (id) => {
+    const exist = wishList.find((item) => item.id === +id);
+    if (exist) {
+      toast.warning("Already Read");
+    } else {
+      console.log(exist);
+    }
+  };
+console.log(id);
   return (
     <section className="dark:bg-gray-100 dark:text-gray-800 container mx-auto px-5 lg:px-10">
       <div className="grid grid-cols-1 lg:grid-cols-2  py-2 items-center">
@@ -87,7 +104,10 @@ const BookDetails = () => {
           </div>
           <div className="flex lg:justify-start justify-center gap-4 mt-4">
             <Button
-              onClick={() => handleReadBtn()}
+              onClick={() => {
+                handleReadBtn();
+                loadFromLocal();
+              }}
               style={{
                 backgroundColor: "transparent",
                 color: "black",
@@ -98,6 +118,7 @@ const BookDetails = () => {
               Read
             </Button>
             <Button
+              onClick={() => handleWishlistBtn(id)}
               style={{
                 backgroundColor: "#50B1C9",
                 textTransform: "capitalize",
