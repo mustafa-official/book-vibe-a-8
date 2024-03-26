@@ -18,6 +18,7 @@ const Banner = () => {
                   style={{
                     backgroundColor: "#23BE0A",
                     textTransform: "capitalize",
+                    fontSize: "16px",
                   }}
                 >
                   View The List

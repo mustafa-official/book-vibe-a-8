@@ -2,7 +2,11 @@ import { useParams } from "react-router-dom";
 import useBooksLoad from "../Hooks/useBooksLoad";
 import { useEffect, useState } from "react";
 import { Button } from "@material-tailwind/react";
-import { getFromLocalStorage, saveToLocalStorage } from "../utils/localStorage";
+import {
+  getFromLocalStorage,
+  saveToLocalStorage,
+  saveToLocalStorageWishList,
+} from "../utils/localStorage";
 import { toast } from "react-toastify";
 
 const BookDetails = () => {
@@ -43,12 +47,13 @@ const BookDetails = () => {
   const handleWishlistBtn = (id) => {
     const exist = wishList.find((item) => item.id === +id);
     if (exist) {
-      toast.warning("Already Read");
+      toast.warning("You have Already Read this Book");
     } else {
-      console.log(exist);
+      const findWishListBook = books.find((book) => book.id === +id);
+      saveToLocalStorageWishList(findWishListBook);
     }
   };
-console.log(id);
+
   return (
     <section className="dark:bg-gray-100 dark:text-gray-800 container mx-auto px-5 lg:px-10">
       <div className="grid grid-cols-1 lg:grid-cols-2  py-2 items-center">

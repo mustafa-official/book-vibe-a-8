@@ -4,10 +4,10 @@ import { FaRegStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SingleBook = ({ book }) => {
-  const { image, bookName, rating, tags, author, category,id } = book || {};
+  const { image, bookName, rating, tags, author, category, id } = book || {};
   return (
     <Link to={`/book-details/${id}`}>
-      <div className="flex flex-col p-6 space-y-6 overflow-hidden rounded-lg border border-[#13131326] dark:bg-gray-50 dark:text-gray-800">
+      <div className="flex flex-col p-6 space-y-6 overflow-hidden h-full rounded-lg border border-[#13131326] dark:bg-gray-50 dark:text-gray-800">
         <div>
           <div className="bg-[#F3F3F3] rounded-lg">
             <img
@@ -27,7 +27,7 @@ const SingleBook = ({ book }) => {
               </Button>
             ))}
           </div>
-          <h2 className="mb-1 text-xl font-semibold">{bookName}</h2>
+          <h2 className="mb-1 text-xl flex-grow font-semibold">{bookName}</h2>
           <p className="text-sm dark:text-gray-600">By: {author}</p>
         </div>
         <hr />

@@ -9,7 +9,7 @@ const ReadBooks = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 gap-5 px-0 lg:px-14 my-8">
+    <div className="grid grid-cols-1 gap-5 my-8">
       {singleRead.map((bookItem) => (
         <SingleReadBook bookItem={bookItem} key={bookItem.id}></SingleReadBook>
       ))}
