@@ -1,6 +1,15 @@
 import { Button } from "@material-tailwind/react";
+import Swal from "sweetalert2/dist/sweetalert2.js";
+import "sweetalert2/src/sweetalert2.scss";
 
 const Buy = () => {
+  const handleSubmit = () => {
+    Swal.fire({
+      title: "Good job!",
+      text: "Submitted Successfully",
+      icon: "success",
+    });
+  };
   return (
     <section className="p-6 px-14  text-gray-50">
       <form action="" className="container flex flex-col mx-auto space-y-12">
@@ -41,6 +50,15 @@ const Buy = () => {
                 className="w-full pl-3 py-2 rounded-md focus:ring focus:ring-opacity-75 text-gray-900 focus:ring-rose-400 border-gray-700"
               />
             </div>
+            <div className="col-span-full sm:col-span-3">
+              <label className="text-sm">Book Name</label>
+              <input
+                id="email"
+                type="text"
+                placeholder="Book Name"
+                className="w-full pl-3 py-2 rounded-md focus:ring focus:ring-opacity-75 text-gray-900 focus:ring-rose-400 border-gray-700"
+              />
+            </div>
             <div className="col-span-full">
               <label className="text-sm">Address</label>
               <input
@@ -77,7 +95,14 @@ const Buy = () => {
                 className="w-full pl-3 py-2 rounded-md focus:ring focus:ring-opacity-75 text-gray-900 focus:ring-rose-400 border-gray-700"
               />
             </div>
-            <Button style={{ backgroundColor: "#23BE0A" }}>Submit</Button>
+            <div>
+              <Button
+                onClick={() => handleSubmit()}
+                style={{ backgroundColor: "#23BE0A" }}
+              >
+                Submit
+              </Button>
+            </div>
           </div>
         </fieldset>
       </form>

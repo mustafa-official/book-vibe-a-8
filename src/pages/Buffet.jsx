@@ -1,3 +1,10 @@
+import bone from "../assets/bone.jpg";
+import bseven from "../assets/bseven.jpg";
+import bsix from "../assets/bsix.jpg";
+import bthree from "../assets/bthree.jpg";
+import btwo from "../assets/btwo.jpg";
+import bfive from "../assets/bfive.jpg";
+import bfour from "../assets/bfour.jpg";
 const Buffet = () => {
   return (
     <section className="dark:bg-gray-100 dark:text-gray-800">
@@ -8,7 +15,7 @@ const Buffet = () => {
           className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 dark:bg-gray-50"
         >
           <img
-            src="https://source.unsplash.com/random/480x360"
+            src={bone}
             alt=""
             className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 dark:bg-gray-500"
           />
@@ -36,7 +43,7 @@ const Buffet = () => {
             <img
               role="presentation"
               className="object-cover w-full rounded h-44 dark:bg-gray-500"
-              src="https://source.unsplash.com/random/480x360?1"
+              src={btwo}
             />
             <div className="p-6 space-y-2">
               <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
@@ -61,7 +68,7 @@ const Buffet = () => {
             <img
               role="presentation"
               className="object-cover w-full rounded h-44 dark:bg-gray-500"
-              src="https://source.unsplash.com/random/480x360?2"
+              src={bthree}
             />
             <div className="p-6 space-y-2">
               <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
@@ -87,7 +94,7 @@ const Buffet = () => {
             <img
               role="presentation"
               className="object-cover w-full rounded h-44 dark:bg-gray-500"
-              src="https://source.unsplash.com/random/480x360?3"
+              src={bfour}
             />
             <div className="p-6 space-y-2">
               <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
@@ -111,7 +118,7 @@ const Buffet = () => {
             <img
               role="presentation"
               className="object-cover w-full rounded h-44 dark:bg-gray-500"
-              src="https://source.unsplash.com/random/480x360?4"
+              src={bfive}
             />
             <div className="p-6 space-y-2">
               <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
@@ -137,7 +144,7 @@ const Buffet = () => {
             <img
               role="presentation"
               className="object-cover w-full rounded h-44 dark:bg-gray-500"
-              src="https://source.unsplash.com/random/480x360?5"
+              src={bsix}
             />
             <div className="p-6 space-y-2">
               <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
@@ -163,7 +170,7 @@ const Buffet = () => {
             <img
               role="presentation"
               className="object-cover w-full rounded h-44 dark:bg-gray-500"
-              src="https://source.unsplash.com/random/480x360?6"
+              src={bseven}
             />
             <div className="p-6 space-y-2">
               <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">

@@ -65,7 +65,7 @@ const NavBar = () => {
                   : ""
               }
             >
-              Buy
+              Get Book
             </NavLink>
           </div>
         </div>
