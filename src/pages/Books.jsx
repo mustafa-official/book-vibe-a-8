@@ -13,8 +13,10 @@ const Books = () => {
             <Tab>Read Books</Tab>
             <Tab>Wishlist Books</Tab>
           </TabList>
-          <TabPanel> 
-            <ReadBooks></ReadBooks>
+          <TabPanel>
+            <div className="grid grid-cols-1 gap-5">
+              <ReadBooks></ReadBooks>
+            </div>
           </TabPanel>
           <TabPanel></TabPanel>
         </Tabs>
