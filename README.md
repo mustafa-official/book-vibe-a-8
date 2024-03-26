@@ -2,4 +2,4 @@
 
 Website: https://awesome-book-vibe.netlify.app/
 
-*Reader-friendly User Interface
+ *Reader-friendly User Interface
