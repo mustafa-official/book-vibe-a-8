@@ -11,7 +11,7 @@ const NavBar = () => {
           </Link>
         </Typography>
         <div className="">
-          <div className="flex lg:justify-normal justify-center lg:flex-row flex-col lg:mt-0 mt-4 items-center gap-4 lg:gap-8">
+          <div className="flex lg:justify-normal justify-center lg:flex-row flex-col lg:mt-0 mt-4 items-center gap-3">
             <NavLink
               style={{ padding: "5px 12px" }}
               to="/"
@@ -44,6 +44,28 @@ const NavBar = () => {
               }
             >
               Pages to Read
+            </NavLink>
+            <NavLink
+              style={{ padding: "5px 12px" }}
+              to="/buffet"
+              className={({ isActive }) =>
+                isActive
+                  ? "border border-[#23BE0A] px-3 rounded-md text-[#23BE0A] font-bold"
+                  : ""
+              }
+            >
+              Top Book Buffet
+            </NavLink>
+            <NavLink
+              style={{ padding: "5px 12px" }}
+              to="/buy"
+              className={({ isActive }) =>
+                isActive
+                  ? "border border-[#23BE0A] px-3 rounded-md text-[#23BE0A] font-bold"
+                  : ""
+              }
+            >
+              Buy
             </NavLink>
           </div>
         </div>

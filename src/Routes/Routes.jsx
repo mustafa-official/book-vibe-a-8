@@ -5,6 +5,8 @@ import Books from "../pages/Books";
 import Read from "../pages/Read";
 import Home from "../pages/Home";
 import BookDetails from "../pages/BookDetails";
+import Buffet from "../pages/Buffet";
+import Buy from "../pages/Buy";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
         {
           path: "/book-details/:id",
           element: <BookDetails></BookDetails>
+        },
+        {
+          path: '/buffet',
+          element: <Buffet></Buffet>
+        },
+        {
+          path: '/buy',
+          element: <Buy></Buy>
         }
       ]
     },
