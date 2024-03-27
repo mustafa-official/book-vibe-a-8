@@ -30,7 +30,7 @@ const Buffet = () => {
             <input
               type="search"
               name="Search"
-              placeholder="Search..."
+              placeholder="Search Book..."
               className="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none bg-gray-800 text-gray-100 focus:bg-gray-900 focus:border-rose-400"
             />
           </div>
