@@ -26,6 +26,7 @@ const Buy = () => {
             <div className="col-span-full sm:col-span-3">
               <label className="text-sm">First name</label>
               <input
+                required
                 id="firstname"
                 type="text"
                 placeholder="First name"
@@ -53,6 +54,7 @@ const Buy = () => {
             <div className="col-span-full sm:col-span-3">
               <label className="text-sm">Book Name</label>
               <input
+                required
                 id="email"
                 type="text"
                 placeholder="Book Name"
@@ -89,6 +91,7 @@ const Buy = () => {
             <div className="col-span-full sm:col-span-2">
               <label className="text-sm">ZIP / Postal</label>
               <input
+                required
                 id="zip"
                 type="text"
                 placeholder=""
