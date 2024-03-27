@@ -4,7 +4,7 @@ import banner from "../assets/banner.png";
 const Banner = () => {
   return (
     <section className="bg-[#1313130D] rounded-lg dark:text-gray-800">
-      <div className="container flex flex-col justify-center p-3 lg:p-6 mx-auto py-8 lg:py-16 lg:flex-row lg:justify-between">
+      <div className="container flex flex-col justify-center px-2 lg:p-6 mx-auto py-8 lg:py-16 lg:flex-row lg:justify-between">
         <div className="flex lg:ml-10 flex-col justify-center text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left">
           <h1 className="lg:text-5xl font-bold text-3xl">
             <span className="block mb-1 lg:mb-3">Books to freshen</span>

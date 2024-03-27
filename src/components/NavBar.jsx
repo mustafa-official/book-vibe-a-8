@@ -4,9 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 const NavBar = () => {
   return (
     <div>
-      
-
-      <div className="navbar container px-10  mx-auto mt-5">
+      <div className="navbar container px-0 lg:px-10 mx-auto mt-5">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,7 +25,7 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu backdrop-blur-md menu-sm dropdown-content mt-3 z-[1] p-2 border border-[#23BE0A] bg-[#ebebeb49] rounded-box min-h-screen w-56"
             >
               <div className="flex lg:justify-normal justify-center lg:flex-row flex-col lg:mt-0 mt-4 items-center gap-3">
                 <NavLink

@@ -42,7 +42,7 @@ const BookDetails = () => {
   const handleReadBtn = () => {
     saveToLocalStorage(data);
   };
-
+ 
   // console.log(wishList);
   const handleWishlistBtn = (id) => {
     const exist = wishList.find((item) => item.id === +id);

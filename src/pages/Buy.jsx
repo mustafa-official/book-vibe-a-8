@@ -11,7 +11,7 @@ const Buy = () => {
     });
   };
   return (
-    <section className="p-6 px-14  text-gray-50">
+    <section className="p-6 px-6 lg:px-14  text-gray-50">
       <form action="" className="container flex flex-col mx-auto space-y-12">
         <fieldset className="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm bg-gray-900">
           <div className="space-y-2 col-span-full lg:col-span-1">
